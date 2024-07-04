@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/address_service_8080/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/address_service_8080/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api_commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api_commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/business_service_8005/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/business_service_8005/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart_service_8004/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cart_service_8004/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food_service_8003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/food_service_8003/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway_service_9527/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway_service_9527/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order_service_8002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order_service_8002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_service_8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user_service_8001/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

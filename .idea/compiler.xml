@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user_service_8001" />
+        <module name="cart_service_8004" />
+        <module name="api_commons" />
+        <module name="food_service_8003" />
+        <module name="order_service_8002" />
+        <module name="address_service_8080" />
+        <module name="business_service_8005" />
+        <module name="gateway_service_9527" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

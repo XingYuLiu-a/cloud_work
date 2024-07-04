@@ -1,0 +1,38 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: order-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    openfeign:
+      httpclient:
+        hc5:
+          enabled: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/elmshixun?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: a13600582228
+#按照次数count_based案例
+resilience4j:
+  circuitbreaker:
+    instances:
+      service:
+        base-config: default
+    configs:
+      default:
+        failure-rate-threshold: 50 #设置50%调用失败时打开断路器
+        sliding-window-type: count_based #滑动窗口类型,count_based次数,time_based时间
+        sliding-window-size: 6 #滑动窗口大小配置count_based表示6个请求，配置time_based表示6秒
+        minimum-number-of-calls: 6 #每个滑动窗口的周期
+        automatic-transition-from-open-to-half-open-enabled: true # 自动从开启过度到到半开状态
+        wait-duration-in-open-state: 5s # 从开启到半开启需要5s
+        permitted-number-of-calls-in-half-open-state: 2 #半开状态允许通过的最大请求数（默认为10）
+        record-exceptions:
+                  - java.lang.Exception
